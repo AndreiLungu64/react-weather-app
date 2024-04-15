@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.weatherContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    height: fit-content;
+    border-radius: 41px;
+    padding: 32px;
+    margin: 24px;
+    background: rgba(190, 190, 190, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    background: rgba(190, 190, 190, 0.38);
+}
+
+.weatherCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 24px;
+    width: fit-content;
+    padding: 0px 60px;
+    height: 8rem;
+    background-image: url(../../../pictures/city-banner.jpg);
+    background-size: cover;
+    border: 2px #565656 solid;
+}
+
+.statisticsContainer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: fit-content;
+    height: fit-content;
+    gap: 24px;
+    background-color: rgba(178, 0, 0, 0);
+  }
+  
+h1{
+    font-family:monospace;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    padding: 0 16px;
+}
+
+img{
+    margin-right: 8px;
+}
+
+.statisticsBoxes {
+    justify-self: center;
+    align-self: center;
+}
+
+.atmosphere{
+    display: inline;
+}
+
+.titleBr{
+    display: none;
+}
+
+.weatherIcon{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(198, 197, 197);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100%;
+}
+img{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .statisticsContainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .titleBr{
+        display: block;
+    }
+  
+}
+
+
+@media screen and (max-width: 576px) {
+    .statisticsContainer{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 18px;
+        max-width: 20px;
+      }
+
+      .titleBr{
+        display: none;
+    }
+
+    .weatherCard{
+        max-width: 7rem;
+        min-height: 15rem;
+    }
+
+    .weatherCard{
+    flex-direction: column;
+    text-align: center;
+    }
+
+}

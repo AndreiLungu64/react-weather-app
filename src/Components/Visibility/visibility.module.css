@@ -1,0 +1,41 @@
+.message{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.sunrise{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.sunset{
+    display: flex;
+}
+
+.hours{
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.arrowContainer{
+    /* background: #036596; */
+    background: #F9D423 ;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.arrowContainer ion-icon{
+    color: rgb(0, 0, 0);
+    margin: 0 !important;
+    margin-left: 1px !important;
+    padding: 0 !important;
+}

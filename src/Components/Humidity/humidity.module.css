@@ -1,0 +1,12 @@
+.meterStyle{
+    margin-top: 10px;
+    width: 8rem;
+}
+
+.centerer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 65px);
+}
