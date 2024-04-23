@@ -8,7 +8,7 @@ import Humidity from "../../Components/Humidity/Humidity.jsx";
 import Visibility from "../../Components/Visibility/Visibility.jsx";
 
 // const apiKey = process.env.REACT_APP_API_KEY;
-const apiKey = "f4493b06fc0cc397c97b7a2e55a33c38";
+const apiKey = "";
 
 function Weather() {
   const [weather, setWeather] = useState(null);
